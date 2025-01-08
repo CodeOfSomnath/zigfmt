@@ -1,10 +1,16 @@
 const std = @import("std");
 const testing = std.testing;
 
-export fn add(a: i32, b: i32) i32 {
-    return a + b;
+// modules
+pub const string = @import("string.zig");
+pub const utils = @import("utils.zig");
+
+test "creating a string" {
+    _ = string.String(std.heap.page_allocator).init("Hello") catch testing.expect(false);
 }
 
-test "basic add functionality" {
-    try testing.expect(add(3, 7) == 10);
+test "concat strings" {
+    var str = try string.String(std.heap.page_allocator).init("h");
+    const newstr = try str.concat("v");
+    try testing.expect(std.mem.eql(u8, newstr.bytes, "hv"));
 }
