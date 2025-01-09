@@ -10,7 +10,7 @@ We will use the standard zig build tool to add this project into library
 1.  Add the url of the library (ex. https://example.com/package.tar.gz)
 
 ```bash
-zig fetch --save [url]
+zig fetch --save "https://github.com/ZigVerse/zigfmt/archive/refs/heads/main.tar.gz"
 ```
 
 2. Add the module in the your <b>build.zig</b> file
