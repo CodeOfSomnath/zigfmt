@@ -84,8 +84,8 @@ pub fn String(alloc: std.mem.Allocator) type {
             return error{ByteNotFound};
         }
 
-        pub fn indexOf(self: *Self, another_str: []const u8) !usize {
-            
-        }
+        // pub fn indexOf(self: *Self, another_str: []const u8) !usize {
+
+        // }
     };
 }

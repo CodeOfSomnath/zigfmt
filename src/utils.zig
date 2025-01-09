@@ -20,8 +20,8 @@ pub fn copy(comptime T: type, dest: []T, source: []const T, starting_index: usiz
     return i;
 }
 
-/// Returns all the index of the 'value'.
-/// all primitive types is supported (u8...u64, i8..i64, bool, etc.)
-pub fn find(comptime T: type, src: []T, value: T) ![]usize {
-    
-}
+// Returns all the index of the 'value'.
+// all primitive types is supported (u8...u64, i8..i64, bool, etc.)
+// pub fn find(comptime T: type, src: []T, value: T) ![]usize {
+
+// }
