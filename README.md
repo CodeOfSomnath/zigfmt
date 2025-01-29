@@ -2,6 +2,9 @@
 
 This is string formatting library in zig. it is used to format strings and standard output operations and standard input operations. This is a simple easy to use library made using zig version 0.13.0 and it used build.zig.zon file as build script.
 
+### Warning
+This library is in early stage for use at your own risk. And If you want to contribute please feel free to do so.
+
 ### How to install it ??
 
 We will use the standard zig build tool to add this project into library
